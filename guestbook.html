@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="gueststyle.css">
+
+    <title>My Guestbook</title>
+
+    <link rel="icon" type="image/jpg" href="guestbook.jpg">
+</head>
+<body>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Sign My Guestbook</h1>
+        <p class="lead"></p>
+    </div>
+</div>
+
+<!--form-->
+<form id="guestbook" action="thanks.php" method="post">
+    <!--contact info-->
+    <fieldset class="form-group">
+    <legend>Contact Info</legend>
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" name="firstName">
+        <span class="err" id="errfname">Required</span>
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" name="lastName">
+        <span class="err" id="errlname">Required</span>
+    </div>
+    <div class="form-group">
+        <label for="jobTitle">Job Title</label>
+        <input type="text" class="form-control" id="jobTitle" name="jobTitle">
+    </div>
+    <div class="form-group">
+        <label for="company">Company</label>
+        <input type="text" class="form-control" id="company" name="company">
+    </div>
+    <div class="form-group">
+        <label for="linkedIn">LinkedIn URL</label>
+        <input type="text" class="form-control" id="linkedIn" name="linkedIn">
+        <span class="err" id="errLink">should start with http and end with .com</span>
+    </div>
+    <div class="form-group">
+        <label for="eMail">Email address</label>
+        <input type="text" class="form-control" id="eMail" name="eMail">
+        <span class="err" id="errmail">Enter a valid e-mail</span>
+    </div>
+    </fieldset>
+
+    <!--how we met-->
+    <fieldset class="form-group">
+    <legend>How we met</legend>
+    <label for="meet">How did we meet?</label>
+    <select class="form-control" id="meet" name="meet">
+        <option value="none">Select one</option>
+        <option value="meetup">Meetup</option>
+        <option value="jobfair">Job Fair</option>
+        <option value="haven't met">We haven't met yet?</option>
+        <option value="other">Other</option>
+    </select>
+        <span class="err" id="errmeet">Required</span>
+    </fieldset>
+
+    <div class="form-group">
+        <label for="other">Other(please specify)</label>
+        <textarea class="form-control" id="other" name="other" rows="2"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="2"></textarea>
+    </div>
+
+    <!--mailing list-->
+    <fieldset class="form-group">
+    <legend>Mailing List</legend>
+
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="addme" name="addme">
+        <label class="form-check-label" for="addme">Please add me to your mailing list</label>
+        <span class="err" id="mail">Enter your email above</span>
+    </div>
+
+    <!--email format-->
+    <p>Choose an email format</p>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="method" id="html" value="html" checked>
+        <label class="form-check-label" for="html">
+            HTML
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="method" id="text" value="text">
+        <label class="form-check-label" for="text">
+            Text
+        </label>
+    </div>
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<script src="guestbook.js"></script>
+<footer class="text-center" font size="15"><a href="admin.php">Admin</a></footer>
+
+</body>
+</html>
