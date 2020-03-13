@@ -1,0 +1,70 @@
+<!--
+Arshdeep Singh
+IT305
+Portfolio Project
+-->
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolioStyle.css">
+
+    <title>Portfolio</title>
+</head>
+<body>
+<div class="jumbotron">
+<h1>Arshdeep Singh</h1>
+</div>
+
+<!-- links to other pages-->
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link active" href="https://asingh69.greenriverdev.com/305/resume/index.html" target="_blank">Resume</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/arshdeep-singh-165aa419a/" target="_blank">LinkedIn</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="https://asingh69.greenriverdev.com/305/guestbook/guestbook.html" target="_blank">Sign My Guestbook</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " href="https://asingh69.greenriverdev.com/305/guestbook/login.php" target="_blank">Admin Only</a>
+    </li>
+</ul>
+
+<!--bio-->
+<div class="jumbotron-fluid">
+<p class="lead">I am a 21 year old software development Student at Green River College. I currently live in Seattle, Washington. I am currently working towards my BAS.
+I plan on finishing my BAS in June 2021. I am also in search of internship.
+</p>
+</div>
+
+<!--portfolio-->
+<div class="row">
+<div class="col-sm">
+<p>IT 305 Project</p>
+<p>Worked in a team to build responsive database-driven web application for our client Dr. Aaron Day. Every
+two weeks, we presented our work to the client and received feedback from our client.</p>
+</div>
+
+<div class="col-sm">
+    <a href="https://john-smith.greenriverdev.com/Dayside/indexOption2.php" target="_blank"> <img src="images/dayside-logo.jpeg" alt="DSLLC"></a>
+</div>
+</div>
+
+<p></p>
+</body>
+
+<!--footer-->
+<footer>
+
+    <p>Contact Me:<br>Email: asingh69@mail.greenriver.edu</p>
+</footer>
+</html>
